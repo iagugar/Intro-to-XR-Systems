@@ -1,3 +1,5 @@
+*.dylib filter=lfs diff=lfs merge=lfs -text
+ArtifactDB filter=lfs diff=lfs merge=lfs -text
 /XR[[:space:]]Systems/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
 /XR[[:space:]]Systems/Library/PackageCache/com.unity.burst@973857688024/.Runtime/burst-llvm-19-arm64.dll filter=lfs diff=lfs merge=lfs -text
 /XR[[:space:]]Systems/Library/PackageCache/com.unity.burst@973857688024/.Runtime/burst-llvm-19.dll filter=lfs diff=lfs merge=lfs -text
