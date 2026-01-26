@@ -1,4 +1,10 @@
 <linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="LightScript" preserve="nothing"/>
+		<type fullname="Orbit" preserve="nothing"/>
+		<type fullname="Quit" preserve="nothing"/>
+		<type fullname="TeleportScript" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputActionReference" preserve="nothing"/>
@@ -64,6 +70,7 @@
 		<type fullname="UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.SplitToning" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Tonemapping" preserve="nothing"/>
+		<type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRendererData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="nothing"/>

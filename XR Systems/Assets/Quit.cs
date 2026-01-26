@@ -1,12 +1,15 @@
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Quit : MonoBehaviour
-{
+{   
+    public InputActionReference action;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+    {   
         action.action.Enable();
-        action.action.performed += ctx => {
+        action.action.performed += (ctx) =>
+        {
             #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
             #else
