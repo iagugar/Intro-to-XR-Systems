@@ -89,6 +89,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Readme",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "ResourceManager",
             "fullManagedTypeName": "",
@@ -1570,13 +1577,6 @@
             "managedAssemblyName": "Unity.XR.OpenXR.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.OpenXR.OpenXRLoader",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.XR.OpenXR.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.XR.OpenXR.OpenXRRestarter",
             "moduleName": "",
             "usedInScenes": []
         },
