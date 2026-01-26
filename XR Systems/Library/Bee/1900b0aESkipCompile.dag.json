@@ -29,7 +29,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 12054,
+      "PayloadLength": 11908,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\pepar\\Desktop\\UMA",
       "Inputs": [],
       "InputFlags": [],
@@ -50,7 +50,6 @@
         "C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Tools/BuildPipeline/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
         "Library/ScriptAssemblies/ControllerSample.dll",
-        "Library/ScriptAssemblies/Unity.AI.Navigation.dll",
         "Library/ScriptAssemblies/Unity.Burst.dll",
         "Library/ScriptAssemblies/Unity.Collections.dll",
         "Library/ScriptAssemblies/Unity.InputSystem.dll",
@@ -110,7 +109,6 @@
         "Library/Bee/artifacts/rsp/6097564273297756792.rsp"
       ],
       "InputFlags": [
-        0,
         0,
         0,
         0,
@@ -369,9 +367,6 @@
     },
     {
       "File": "Library/ScriptAssemblies/ControllerSample.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.AI.Navigation.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Burst.dll"
