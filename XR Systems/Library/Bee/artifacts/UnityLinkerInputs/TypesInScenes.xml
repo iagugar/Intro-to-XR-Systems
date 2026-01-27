@@ -70,7 +70,6 @@
 		<type fullname="UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.SplitToning" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.Tonemapping" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRendererData" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="nothing"/>
@@ -127,6 +126,7 @@
 		<type fullname="UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.ContinuousTurnProvider" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.SnapTurnProvider" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyTransformer" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Interaction.Toolkit.XRInteractionManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator">
 		<type fullname="UnityEngine.XR.Interaction.Toolkit.Samples.InteractionSimulator.XRInteractionSimulatorInputFeedbackUI" preserve="nothing"/>
@@ -144,6 +144,7 @@
 		<type fullname="UnityEngine.XR.Management.XRManagerSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.OpenXR">
+		<type fullname="UnityEngine.XR.OpenXR.Features.AutomaticDynamicResolutionFeature" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.Features.FoveatedRenderingFeature" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.Features.Interactions.DPadInteraction" preserve="nothing"/>
@@ -160,14 +161,21 @@
 		<type fullname="UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.Features.Interactions.PalmPoseInteraction" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.OpenXR.Features.SpaceWarpFeature" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.OpenXRLoader" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.OpenXR.OpenXRSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.OpenXR.Features.ConformanceAutomation">
 		<type fullname="UnityEngine.XR.OpenXR.Features.ConformanceAutomation.ConformanceAutomationFeature" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="Unity.XR.OpenXR.Features.MetaQuestSupport">
+		<type fullname="UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="Unity.XR.OpenXR.Features.MockRuntime">
 		<type fullname="UnityEngine.XR.OpenXR.Features.Mock.MockRuntime" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.XR.OpenXR.Features.OculusQuestSupport">
+		<type fullname="UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.OpenXR.Features.RuntimeDebugger">
 		<type fullname="UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature" preserve="nothing"/>

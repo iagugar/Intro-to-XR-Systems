@@ -74,7 +74,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights
     - UnityEngine.Rendering.Universal.SplitToning
     - UnityEngine.Rendering.Universal.Tonemapping
-    - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineGlobalSettings
@@ -159,21 +158,28 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.ContinuousTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.SnapTurnProvider
     - UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyTransformer
+    - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
     Unity.XR.OpenXR.Editor.dll:
+    - UnityEditor.XR.OpenXR.BuildProfileUtility
     - UnityEditor.XR.OpenXR.OpenXREditorSettings
     - UnityEditor.XR.OpenXR.OpenXRPackageSettings
     Unity.XR.OpenXR.Features.ConformanceAutomation.dll:
     - UnityEngine.XR.OpenXR.Features.ConformanceAutomation.ConformanceAutomationFeature
+    Unity.XR.OpenXR.Features.MetaQuestSupport.dll:
+    - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature
     Unity.XR.OpenXR.Features.MockRuntime.dll:
     - UnityEngine.XR.OpenXR.Features.Mock.MockRuntime
+    Unity.XR.OpenXR.Features.OculusQuestSupport.dll:
+    - UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature
     Unity.XR.OpenXR.Features.RuntimeDebugger.dll:
     - UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature
     Unity.XR.OpenXR.dll:
+    - UnityEngine.XR.OpenXR.Features.AutomaticDynamicResolutionFeature
     - UnityEngine.XR.OpenXR.Features.Extensions.PerformanceSettings.XrPerformanceSettingsFeature
     - UnityEngine.XR.OpenXR.Features.FoveatedRenderingFeature
     - UnityEngine.XR.OpenXR.Features.Interactions.DPadInteraction
@@ -190,6 +196,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile
     - UnityEngine.XR.OpenXR.Features.Interactions.PalmPoseInteraction
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
+    - UnityEngine.XR.OpenXR.Features.SpaceWarpFeature
     - UnityEngine.XR.OpenXR.OpenXRLoader
     - UnityEngine.XR.OpenXR.OpenXRSettings
     UnityEditor.TestRunner.dll:
@@ -287,7 +294,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.ScriptableRendererData/DebugShaderResources
     - UnityEngine.Rendering.Universal.ScriptableRendererData/ProbeVolumeResources
     - UnityEngine.Rendering.Universal.StencilStateData
-    - UnityEngine.Rendering.Universal.TemporalAA/Settings
     - UnityEngine.Rendering.Universal.TonemappingModeParameter
     - UnityEngine.Rendering.Universal.URPDefaultVolumeProfileSettings
     - UnityEngine.Rendering.Universal.URPShaderStrippingSetting
@@ -379,28 +385,46 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerButton
     methodName: OnAction
   - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
-    methodName: OnDecrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
-    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
-    methodName: OnIncrement
-  - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
   - assembly: Unity.RenderPipelines.Core.Runtime
@@ -417,46 +441,28 @@ ScriptsOnlyBuild:
     methodName: OnDecrement
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    methodName: OnIncrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    methodName: OnIncrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    methodName: OnIncrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
+    methodName: OnDecrement
+  - assembly: Unity.RenderPipelines.Core.Runtime
+    fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField
     methodName: OnIncrement
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -496,223 +502,223 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 85476}
+      Script: {instanceID: 36082}
     - Class: 114
-      Script: {instanceID: 90258}
+      Script: {instanceID: 46150}
     - Class: 114
-      Script: {instanceID: 19776}
-    - Class: 114
-      Script: {instanceID: 47254}
-    - Class: 114
-      Script: {instanceID: 35126}
-    - Class: 114
-      Script: {instanceID: 40288}
-    - Class: 114
-      Script: {instanceID: 46178}
-    - Class: 114
-      Script: {instanceID: 34362}
-    - Class: 114
-      Script: {instanceID: 91624}
-    - Class: 114
-      Script: {instanceID: 38798}
-    - Class: 114
-      Script: {instanceID: 36400}
-    - Class: 114
-      Script: {instanceID: 37646}
-    - Class: 114
-      Script: {instanceID: 46294}
-    - Class: 114
-      Script: {instanceID: 38988}
-    - Class: 114
-      Script: {instanceID: 34914}
-    - Class: 114
-      Script: {instanceID: 35366}
-    - Class: 114
-      Script: {instanceID: 45166}
-    - Class: 114
-      Script: {instanceID: 43520}
-    - Class: 114
-      Script: {instanceID: 40436}
-    - Class: 114
-      Script: {instanceID: 37608}
-    - Class: 114
-      Script: {instanceID: 46694}
-    - Class: 114
-      Script: {instanceID: 40680}
-    - Class: 114
-      Script: {instanceID: 37460}
-    - Class: 114
-      Script: {instanceID: 40354}
-    - Class: 114
-      Script: {instanceID: 40558}
-    - Class: 114
-      Script: {instanceID: 35452}
-    - Class: 114
-      Script: {instanceID: 37574}
-    - Class: 114
-      Script: {instanceID: 35698}
-    - Class: 114
-      Script: {instanceID: 45102}
-    - Class: 114
-      Script: {instanceID: 37112}
-    - Class: 114
-      Script: {instanceID: 34570}
-    - Class: 114
-      Script: {instanceID: 39826}
-    - Class: 114
-      Script: {instanceID: 34866}
-    - Class: 114
-      Script: {instanceID: 36844}
-    - Class: 114
-      Script: {instanceID: 41696}
-    - Class: 114
-      Script: {instanceID: 45480}
-    - Class: 114
-      Script: {instanceID: 46666}
-    - Class: 114
-      Script: {instanceID: 39916}
-    - Class: 114
-      Script: {instanceID: 35304}
-    - Class: 114
-      Script: {instanceID: 47516}
-    - Class: 114
-      Script: {instanceID: 46290}
-    - Class: 114
-      Script: {instanceID: 41694}
-    - Class: 114
-      Script: {instanceID: 41586}
-    - Class: 114
-      Script: {instanceID: 39876}
-    - Class: 114
-      Script: {instanceID: 42814}
-    - Class: 114
-      Script: {instanceID: 46566}
-    - Class: 114
-      Script: {instanceID: 37512}
-    - Class: 114
-      Script: {instanceID: 46872}
-    - Class: 114
-      Script: {instanceID: 44648}
-    - Class: 114
-      Script: {instanceID: 40196}
-    - Class: 114
-      Script: {instanceID: 43494}
-    - Class: 114
-      Script: {instanceID: 36914}
-    - Class: 114
-      Script: {instanceID: 46404}
-    - Class: 114
-      Script: {instanceID: 37360}
-    - Class: 114
-      Script: {instanceID: 41962}
-    - Class: 114
-      Script: {instanceID: 36138}
-    - Class: 114
-      Script: {instanceID: 35854}
-    - Class: 114
-      Script: {instanceID: 38636}
-    - Class: 114
-      Script: {instanceID: 47152}
-    - Class: 114
-      Script: {instanceID: 45668}
-    - Class: 114
-      Script: {instanceID: 41374}
-    - Class: 114
-      Script: {instanceID: 45560}
-    - Class: 114
-      Script: {instanceID: 47696}
-    - Class: 114
-      Script: {instanceID: 39002}
+      Script: {instanceID: 35892}
     - Class: 114
       Script: {instanceID: 47358}
     - Class: 114
-      Script: {instanceID: 37712}
+      Script: {instanceID: 35222}
     - Class: 114
-      Script: {instanceID: 35680}
+      Script: {instanceID: 40388}
     - Class: 114
-      Script: {instanceID: 44004}
+      Script: {instanceID: 46282}
     - Class: 114
-      Script: {instanceID: 35344}
+      Script: {instanceID: 34458}
     - Class: 114
-      Script: {instanceID: 40690}
+      Script: {instanceID: 40604}
     - Class: 114
-      Script: {instanceID: 36354}
+      Script: {instanceID: 38898}
     - Class: 114
-      Script: {instanceID: 36422}
+      Script: {instanceID: 36500}
     - Class: 114
-      Script: {instanceID: 36588}
+      Script: {instanceID: 37746}
     - Class: 114
-      Script: {instanceID: 41960}
+      Script: {instanceID: 46398}
     - Class: 114
-      Script: {instanceID: 46638}
+      Script: {instanceID: 39088}
     - Class: 114
-      Script: {instanceID: 42748}
+      Script: {instanceID: 35010}
     - Class: 114
-      Script: {instanceID: 47818}
+      Script: {instanceID: 35462}
     - Class: 114
-      Script: {instanceID: 42388}
+      Script: {instanceID: 45268}
     - Class: 114
-      Script: {instanceID: 44678}
+      Script: {instanceID: 43622}
     - Class: 114
-      Script: {instanceID: 39702}
+      Script: {instanceID: 40536}
     - Class: 114
-      Script: {instanceID: 39246}
+      Script: {instanceID: 37708}
     - Class: 114
-      Script: {instanceID: 38872}
+      Script: {instanceID: 46798}
     - Class: 114
-      Script: {instanceID: 42164}
+      Script: {instanceID: 40782}
     - Class: 114
-      Script: {instanceID: 34130}
+      Script: {instanceID: 37560}
     - Class: 114
-      Script: {instanceID: 42698}
+      Script: {instanceID: 40454}
     - Class: 114
-      Script: {instanceID: 45348}
+      Script: {instanceID: 40660}
     - Class: 114
-      Script: {instanceID: 42820}
+      Script: {instanceID: 35548}
     - Class: 114
-      Script: {instanceID: 46278}
+      Script: {instanceID: 37674}
     - Class: 114
-      Script: {instanceID: 35254}
+      Script: {instanceID: 35794}
     - Class: 114
-      Script: {instanceID: 40900}
+      Script: {instanceID: 45204}
     - Class: 114
-      Script: {instanceID: 44050}
+      Script: {instanceID: 37212}
     - Class: 114
-      Script: {instanceID: 45106}
+      Script: {instanceID: 34666}
     - Class: 114
-      Script: {instanceID: 46846}
+      Script: {instanceID: 39926}
     - Class: 114
-      Script: {instanceID: 37516}
+      Script: {instanceID: 34962}
     - Class: 114
-      Script: {instanceID: 34864}
+      Script: {instanceID: 36944}
     - Class: 114
-      Script: {instanceID: 43942}
+      Script: {instanceID: 41798}
     - Class: 114
-      Script: {instanceID: 44416}
+      Script: {instanceID: 45582}
     - Class: 114
-      Script: {instanceID: 36918}
+      Script: {instanceID: 46770}
     - Class: 114
-      Script: {instanceID: 34250}
+      Script: {instanceID: 40016}
     - Class: 114
-      Script: {instanceID: 34816}
+      Script: {instanceID: 35400}
     - Class: 114
-      Script: {instanceID: 38858}
+      Script: {instanceID: 47620}
     - Class: 114
-      Script: {instanceID: 40482}
+      Script: {instanceID: 46394}
     - Class: 114
-      Script: {instanceID: 43806}
+      Script: {instanceID: 41796}
     - Class: 114
-      Script: {instanceID: 47216}
+      Script: {instanceID: 41688}
     - Class: 114
-      Script: {instanceID: 41884}
+      Script: {instanceID: 39976}
     - Class: 114
-      Script: {instanceID: 37058}
+      Script: {instanceID: 42916}
     - Class: 114
-      Script: {instanceID: 44584}
+      Script: {instanceID: 46670}
     - Class: 114
-      Script: {instanceID: 44456}
+      Script: {instanceID: 37612}
     - Class: 114
-      Script: {instanceID: 39830}
+      Script: {instanceID: 46976}
+    - Class: 114
+      Script: {instanceID: 44750}
+    - Class: 114
+      Script: {instanceID: 43596}
+    - Class: 114
+      Script: {instanceID: 37014}
+    - Class: 114
+      Script: {instanceID: 46508}
+    - Class: 114
+      Script: {instanceID: 37460}
+    - Class: 114
+      Script: {instanceID: 42064}
+    - Class: 114
+      Script: {instanceID: 36238}
+    - Class: 114
+      Script: {instanceID: 35952}
+    - Class: 114
+      Script: {instanceID: 38736}
+    - Class: 114
+      Script: {instanceID: 47256}
+    - Class: 114
+      Script: {instanceID: 45770}
+    - Class: 114
+      Script: {instanceID: 41476}
+    - Class: 114
+      Script: {instanceID: 45662}
+    - Class: 114
+      Script: {instanceID: 47800}
+    - Class: 114
+      Script: {instanceID: 39102}
+    - Class: 114
+      Script: {instanceID: 47462}
+    - Class: 114
+      Script: {instanceID: 37812}
+    - Class: 114
+      Script: {instanceID: 35776}
+    - Class: 114
+      Script: {instanceID: 44106}
+    - Class: 114
+      Script: {instanceID: 35440}
+    - Class: 114
+      Script: {instanceID: 40792}
+    - Class: 114
+      Script: {instanceID: 36454}
+    - Class: 114
+      Script: {instanceID: 36522}
+    - Class: 114
+      Script: {instanceID: 36688}
+    - Class: 114
+      Script: {instanceID: 42062}
+    - Class: 114
+      Script: {instanceID: 46742}
+    - Class: 114
+      Script: {instanceID: 42850}
+    - Class: 114
+      Script: {instanceID: 47922}
+    - Class: 114
+      Script: {instanceID: 42490}
+    - Class: 114
+      Script: {instanceID: 44780}
+    - Class: 114
+      Script: {instanceID: 39802}
+    - Class: 114
+      Script: {instanceID: 39346}
+    - Class: 114
+      Script: {instanceID: 38972}
+    - Class: 114
+      Script: {instanceID: 42266}
+    - Class: 114
+      Script: {instanceID: 34226}
+    - Class: 114
+      Script: {instanceID: 42800}
+    - Class: 114
+      Script: {instanceID: 45450}
+    - Class: 114
+      Script: {instanceID: 42922}
+    - Class: 114
+      Script: {instanceID: 46382}
+    - Class: 114
+      Script: {instanceID: 35350}
+    - Class: 114
+      Script: {instanceID: 41002}
+    - Class: 114
+      Script: {instanceID: 44152}
+    - Class: 114
+      Script: {instanceID: 45208}
+    - Class: 114
+      Script: {instanceID: 46950}
+    - Class: 114
+      Script: {instanceID: 37616}
+    - Class: 114
+      Script: {instanceID: 34960}
+    - Class: 114
+      Script: {instanceID: 44044}
+    - Class: 114
+      Script: {instanceID: 44518}
+    - Class: 114
+      Script: {instanceID: 37018}
+    - Class: 114
+      Script: {instanceID: 34346}
+    - Class: 114
+      Script: {instanceID: 34912}
+    - Class: 114
+      Script: {instanceID: 38958}
+    - Class: 114
+      Script: {instanceID: 40582}
+    - Class: 114
+      Script: {instanceID: 43908}
+    - Class: 114
+      Script: {instanceID: 47320}
+    - Class: 114
+      Script: {instanceID: 41986}
+    - Class: 114
+      Script: {instanceID: 37158}
+    - Class: 114
+      Script: {instanceID: 44686}
+    - Class: 114
+      Script: {instanceID: 44558}
+    - Class: 114
+      Script: {instanceID: 39930}
+    - Class: 114
+      Script: {instanceID: 36568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -740,12 +746,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: f8f22ef6a039cc19f32aa6b8f7e7c8f7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Quit
   - hash:
       serializedVersion: 2
       Hash: ea78afb1b30663b7c04c956e9f2acdec
@@ -1132,6 +1132,12 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: f8f22ef6a039cc19f32aa6b8f7e7c8f7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Quit
+  - hash:
+      serializedVersion: 2
       Hash: ad1a96300e856d5c0ed71e6a72f6a89e
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
@@ -1178,6 +1184,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerWidget
+  - hash:
+      serializedVersion: 2
+      Hash: 71e194444a7582bad372bad71e901565
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LightScript
   - hash:
       serializedVersion: 2
       Hash: 6d971045f8e67def7430d0b6f3cb0700
@@ -2078,6 +2090,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.CoreUtils
     namespaceName: Unity.XR.CoreUtils.Datums
     className: AnimationCurveDatum
+  - hash:
+      serializedVersion: 2
+      Hash: a72b68307becfb0f6679854c715cf882
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TeleportScript
   - hash:
       serializedVersion: 2
       Hash: 5a5717edb850ddc471c0ab30656bb349
@@ -3058,6 +3076,12 @@ ScriptsOnlyBuild:
     className: AnimatorMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e537a622de5ac536dd617a20fd60d87b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Orbit
+  - hash:
+      serializedVersion: 2
       Hash: f45c7164f9435bd3401bb03181a4734a
     assemblyName: ControllerSample
     namespaceName: UnityEngine.XR.OpenXR.Samples.ControllerSample
@@ -3494,24 +3518,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71e194444a7582bad372bad71e901565
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LightScript
-  - hash:
-      serializedVersion: 2
-      Hash: e537a622de5ac536dd617a20fd60d87b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Orbit
-  - hash:
-      serializedVersion: 2
-      Hash: a72b68307becfb0f6679854c715cf882
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TeleportScript
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

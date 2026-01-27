@@ -963,13 +963,6 @@
         {
             "managedAssemblyName": "Unity.RenderPipelines.Universal.Runtime.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.RenderPipelines.Universal.Runtime.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Rendering.Universal.UniversalAdditionalLightData",
             "moduleName": "",
             "usedInScenes": []
@@ -1513,6 +1506,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Unity.XR.Interaction.Toolkit.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Interaction.Toolkit.XRInteractionManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.XR.Management.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.Management.XRGeneralSettings",
@@ -1523,6 +1523,13 @@
             "managedAssemblyName": "Unity.XR.Management.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.Management.XRManagerSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.AutomaticDynamicResolutionFeature",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1646,6 +1653,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.MetaQuestSupport.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.XR.OpenXR.Features.MockRuntime.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.Mock.MockRuntime",
@@ -1653,9 +1667,23 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Unity.XR.OpenXR.Features.OculusQuestSupport.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.XR.OpenXR.Features.RuntimeDebugger.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.OpenXR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.OpenXR.Features.SpaceWarpFeature",
             "moduleName": "",
             "usedInScenes": []
         },
