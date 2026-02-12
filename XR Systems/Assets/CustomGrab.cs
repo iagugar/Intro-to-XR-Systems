@@ -32,8 +32,6 @@ public class CustomGrab : MonoBehaviour
         grabbing = action.action.IsPressed();
         if (grabbing)
         {
-            Vector3 pos = transform.position;
-            Quaternion rot = transform.rotation;
             // Grab nearby object or the object in the other hand
             if (!grabbedObject)
                 grabbedObject = nearObjects.Count > 0 ? nearObjects[0] : otherHand.grabbedObject;
@@ -42,11 +40,10 @@ public class CustomGrab : MonoBehaviour
             {
                 // Change these to add the delta position and rotation instead
                 // Save the position and rotation at the end of Update function, so you can compare previous pos/rot to current here
-                if (transform.hasChanged) {
-                    pos = grabbedObject.position + (transform.position-pos);
-                    rot = grabbedObject.rotation * (rot * Quaternion.Inverse(transform.rotation));
-                    transform.hasChanged = false;
-                }
+                
+                pos = grabbedObject.position + (transform.position-pos);
+                Quaternion deltaRot = (rot * Quaternion.Inverse(transform.rotation));
+                rot.Set(grabbedObject.rotation[0]+deltaRot[0], grabbedObject.rotation[1]+deltaRot[1], grabbedObject.rotation[2]+deltaRot[2], grabbedObject.rotation[3]+deltaRot[3]);
             }
         }
         // If let go of button, release object
@@ -55,7 +52,7 @@ public class CustomGrab : MonoBehaviour
 
         // Should save the current position and rotation here
         grabbedObject.position = pos;
-        grabbedObject.rotation = rot;
+        grabbedObject.rotation = Quaternion.LookRotation(transform.forward);
     }
 
     private void OnTriggerEnter(Collider other)
